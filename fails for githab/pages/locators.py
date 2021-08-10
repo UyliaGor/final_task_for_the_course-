@@ -12,3 +12,4 @@ class ProductPageLocators():
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
     BASKET_PRODUCT_NAME = (By.CSS_SELECTOR, " .alert:nth-child(1) strong")
     BASKET_PRICE_NAME = (By.CSS_SELECTOR, ".alert:nth-child(3) strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert:nth-child(1)")

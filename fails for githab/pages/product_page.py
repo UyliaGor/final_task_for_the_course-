@@ -14,3 +14,9 @@ class ProductPage(BasePage):
     # метод проверки совпадения цены товара в карточке с ценой товара в корзине
     def should_be_massage_price(self):
         assert self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text == self.browser.find_element(*ProductPageLocators.BASKET_PRICE_NAME).text, "Цена товара не совападает"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented, but should not be"
+
+    def should_disappear_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented, but should not be"
