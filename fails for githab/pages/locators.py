@@ -13,3 +13,6 @@ class ProductPageLocators():
     BASKET_PRODUCT_NAME = (By.CSS_SELECTOR, " .alert:nth-child(1) strong")
     BASKET_PRICE_NAME = (By.CSS_SELECTOR, ".alert:nth-child(3) strong")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert:nth-child(1)")
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link")
