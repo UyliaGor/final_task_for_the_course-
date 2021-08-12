@@ -4,6 +4,7 @@ from .locators import ProductPageLocators
 from .main_page import MainPage
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+from .locators import BasketPageLocators
 class ProductPage(BasePage):
     def can_add_product_to_basket(self):
         basket_button = self.browser.find_element(*ProductPageLocators.BASKET_BUTTON)
